@@ -14,4 +14,4 @@ deploy:
   github_token: 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
   keep_history: true
   on:
-    branch: main
+    branch: Travis
