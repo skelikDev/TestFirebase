@@ -5,16 +5,7 @@ import reactRefresh from '@vitejs/plugin-react-refresh'
 export default defineConfig({
     plugins: [reactRefresh()],
     build: {
-        chunkSizeWarningLimit: 500,
-        rollupOptions: {
-            output: {
-                manualChunks(id) {
-                    if (id.includes('node_modules')) {
+        chunkSizeWarningLimit: 1500,
 
-                        return id.toString().split('node_modules/')[1].split('/')[0].toString();
-                    }
-                }
-            }
-        }
     }
 })
