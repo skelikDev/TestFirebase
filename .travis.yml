@@ -2,9 +2,9 @@ language: node_js
 node_js:
   - lts/*
 install:
-  - npm ci
+  - yarn ci
 script:
-  - npm run build
+  - yarn run build
 deploy:
   provider: pages
   skip_cleanup: true
@@ -14,4 +14,4 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
   on:
-    branch: master
+    branch: main
